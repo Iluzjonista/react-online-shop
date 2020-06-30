@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "productName": "Leica M10-P",
+    "imageUrl": "camera-1",
+    "price": 6900,
+    "stock": 20,
+    "liked": false,
+    "detail": "This is description of a product",
+    "categories": [
+      "camera"
+    ]
+  },
+  {
+    "id": 2,
+    "productName": "Leica SL2",
+    "imageUrl": "camera-2",
+    "price": 5300,
+    "stock": 30,
+    "liked": false,
+    "detail": "This is description of a product",
+    "categories": [
+      "Camera"
+    ]
+  },
+  {
+    "id": 3,
+    "productName": "Leica M10-P ASC 100 Edition",
+    "imageUrl": "camera-3",
+    "price": 16250,
+    "stock": 3,
+    "liked": false,
+    "detail": "This is description of a product",
+    "categories": [
+      "camera"
+    ]
+  },
+  {
+    "id": 4,
+    "productName": "Leica V-lux 5",
+    "imageUrl": "camera-4",
+    "price": 1050,
+    "stock": 50,
+    "liked": false,
+    "detail": "This is description of a product",
+    "categories": [
+      "camera"
+    ]
+  },
+  {
+    "id": 5,
+    "productName": "Leica Q2",
+    "imageUrl": "camera-5",
+    "price": 9000000,
+    "stock": 111,
+    "liked": false,
+    "detail": "This is description of a product",
+    "categories": [
+      "camera"
+    ]
+  },
+  {
+    "id": 6,
+    "productName": "Leica CL 100 years Bauhaus",
+    "imageUrl": "camera-6",
+    "price": 3300,
+    "stock": 20,
+    "liked": false,
+    "detail": "This is description of a product",
+    "categories": [
+      "camera"
+    ]
+  },
+  {
+    "id": 7,
+    "productName": "Summicron-m 50mm",
+    "imageUrl": "lens-1",
+    "price": 9000000,
+    "stock": 7,
+    "liked": false,
+    "detail": "This is description of a product",
+    "categories": [
+      "lens"
+    ]
+  },
+  {
+    "id": 8,
+    "productName": "Apo-Summicron-m 50mm",
+    "imageUrl": "lens-2",
+    "price": 8100,
+    "stock": 5,
+    "liked": false,
+    "detail": "This is description of a product",
+    "categories": [
+      "lens"
+    ]
+  },
+  {
+    "id": 9,
+    "productName": "Summaron-m",
+    "imageUrl": "lens-3",
+    "price": 2600,
+    "stock": 5,
+    "liked": false,
+    "detail": "This is description of a product",
+    "categories": [
+      "lens"
+    ]
+  },
+  {
+    "id": 10,
+    "productName": "Lens hood with Cap",
+    "imageUrl": "acc-1",
+    "price": 120,
+    "stock": 111,
+    "liked": false,
+    "detail": "This is description of a product",
+    "categories": [
+      "accessories"
+    ]
+  }
+]

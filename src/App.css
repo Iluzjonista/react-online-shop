@@ -1,0 +1,52 @@
+.input-control input {
+    border: 1px solid #F0EFEF;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.mt-75 {
+    margin-top: 75px
+}
+
+.product .row {
+    margin-top: 25px;
+
+}
+
+.product {
+    padding: 15px;
+    /* border: 1px solid #000000; */
+    -webkit-box-shadow: 10px 10px 40px -24px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 10px 10px 40px -24px rgba(0, 0, 0, 0.66);
+    box-shadow: 10px 10px 40px -24px rgba(0, 0, 0, 0.66);
+    background-color: white;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    height: 75px;
+}
+
+.colors {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.colors button {
+    height: 40px;
+}
+
+.dropdown-menu li {
+    display: flex;
+    justify-content: center;
+}
+
+.main-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
