@@ -26,7 +26,7 @@ class Header extends React.Component {
         return (
             <Navbar bg="light" expand="lg" variant="light" fixed="top">
                 <Container>
-                    <Navbar.Brand href="/">React Mini Shop</Navbar.Brand>
+                    <Navbar.Brand href="/">React online shop</Navbar.Brand>
                     <span className="app-bar-divider"></span>
                     <div className="input-control text">
                         <input type="text" placeholder="Search..."

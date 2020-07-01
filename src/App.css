@@ -1,3 +1,6 @@
+body{
+    background-color: #f0efef;
+}
 .input-control input {
     border: 1px solid #F0EFEF;
     border-radius: 10px;

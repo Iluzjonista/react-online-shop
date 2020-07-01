@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react';
 
-import Sidebar from "../components/Sidebar";
 import Products from "../components/Products";
 import {Container} from "react-bootstrap";
 import {connect} from "react-redux";
@@ -17,7 +16,6 @@ class Main extends React.Component {
                             <Products products={this.props.filteredProducts}/>
                         </div>
 
-                        {/*<Sidebar cartItems={this.props.cartItems}/>*/}
                     </div>
                 </Container>
             </Fragment>

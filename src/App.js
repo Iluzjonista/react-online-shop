@@ -4,7 +4,6 @@ import "./App.css";
 import {connect} from "react-redux";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Sidebar from "./components/Sidebar";
 import CartPage from "./pages/CartPage"
 import Main from "./pages/Main";
 import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
