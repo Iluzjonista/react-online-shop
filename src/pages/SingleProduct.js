@@ -1,10 +1,11 @@
 import React, {Fragment} from 'react';
 
-import Products from "../components/Products";
+import Single from "../components/Single";
 import {Container} from "react-bootstrap";
 import {connect} from "react-redux";
+import Products from "../components/Products";
 
-class Main extends React.Component {
+class SingleProduct extends React.Component {
     render() {
         return (
             <Fragment>
@@ -12,9 +13,8 @@ class Main extends React.Component {
 
                 <Container className='mt-75'>
                     <div className="row">
-
                         <div className="col-md-12">
-                            <Products products={this.props.filteredProducts}/>
+                            <Single products={this.props.filteredSingle}/>
                         </div>
 
                     </div>
@@ -24,7 +24,7 @@ class Main extends React.Component {
     }
 }
 
-// export default Main;
+
 const mapStateToProps = state => {
     return {
         cartItems: state.cart.items,
@@ -34,4 +34,4 @@ const mapStateToProps = state => {
     };
 };
 
-export default connect(mapStateToProps)(Main);
+export default connect(mapStateToProps)(SingleProduct);

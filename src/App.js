@@ -1,10 +1,10 @@
 import React, {Component} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import {connect} from "react-redux";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CartPage from "./pages/CartPage"
+import SingleProduct from "./pages/SingleProduct";
 import Main from "./pages/Main";
 import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 
@@ -16,6 +16,9 @@ class App extends Component {
                 <Switch>
                     <Route path="/cart">
                         <CartPage/>
+                    </Route>
+                    <Route path="/product/:id">
+                        <SingleProduct/>
                     </Route>
                     <Route path="/">
                         <Main/>

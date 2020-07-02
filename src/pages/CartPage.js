@@ -3,6 +3,7 @@ import formatCurrency from "../utils/helper";
 import {connect} from "react-redux";
 import {removeFromCart} from "../actions/cart";
 import Button from "react-bootstrap/Button";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 class CartPage extends Component {
 
@@ -11,12 +12,18 @@ class CartPage extends Component {
         const {cartItems} = this.props;
         return (
             <div className="container mt-75">
+                <div className="breadcrumb">
+                    <Breadcrumb>
+                        <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                        <Breadcrumb.Item active>Cart</Breadcrumb.Item>
+                    </Breadcrumb>
+                </div>
                 <div className="cart">
-                    {cartItems.length === 0
-                        ? "Cart is empty"
-                        : `You have ${cartItems.length} item(s) in the cart`}
                     <div>
                         <h2>Your Cart Items</h2>
+                        {cartItems.length === 0
+                            ? "Cart is empty"
+                            : `You have ${cartItems.length} item(s) in the cart`}
                         {cartItems.length > 0 && (
                             <table className="table table-hover checkout">
                                 <tbody className="text-center">
@@ -59,9 +66,9 @@ class CartPage extends Component {
                                 </tbody>
                             </table>
                         )}
-                        <button onClick={() => alert("TODO: create checkout view")}
-                                className="btn">Checkout
-                        </button>
+                        {/*<button onClick={() => alert("TODO: create checkout view")}*/}
+                        {/*        className="btn">Checkout*/}
+                        {/*</button>*/}
                     </div>
                 </div>
             </div>

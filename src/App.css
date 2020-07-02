@@ -1,6 +1,12 @@
-body{
+body {
     background-color: #f0efef;
 }
+
+a {
+    color: inherit !important; /* blue colors for links too */
+    text-decoration: inherit !important; /* no underline */
+}
+
 .input-control input {
     border: 1px solid #F0EFEF;
     border-radius: 10px;
@@ -52,4 +58,9 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+}
+
+.breadcrumb {
+    padding: .5rem 0 0 1rem;
+    font-size: .75rem;
 }

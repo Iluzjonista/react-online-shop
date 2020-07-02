@@ -1,6 +1,7 @@
 import {
   FETCH_PRODUCTS,
   FILTER_PRODUCTS_BY_CATEGORY,
+  FILTER_PRODUCTS_BY_ID,
 } from "./types";
 
 export const fetchProducts = () => dispatch => {
@@ -25,6 +26,21 @@ export const filterProducts = (products, cat) => dispatch => {
               a => a.categories.indexOf(cat.toLowerCase()) >= 0
             ),
       cat: cat
+    }
+  });
+};
+
+export const filterSingle = (products, id) => dispatch => {
+  return dispatch({
+    type: FILTER_PRODUCTS_BY_ID,
+    payload: {
+      items:
+          id === ""
+              ? products
+              : products.filter(
+              a => a.id.indexOf(id) >= 0
+              ),
+      id: id
     }
   });
 };
