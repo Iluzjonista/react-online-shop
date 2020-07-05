@@ -7,6 +7,7 @@ import {
 const initialState = {
     items: [],
     filteredItems: [],
+    id: "",
     categories: "",
     sort: ""
 };
