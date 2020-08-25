@@ -6,8 +6,6 @@ import Button from "react-bootstrap/Button";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 class CartPage extends Component {
-
-
     render() {
         const {cartItems} = this.props;
         return (
@@ -37,7 +35,7 @@ class CartPage extends Component {
                                 </tr>
                                 {cartItems.map((item, index) => (
                                     <tr>
-                                        <th>{index+1}</th>
+                                        <th>{index + 1}</th>
                                         <th>{item.productName}</th>
                                         <th>{item.count}</th>
                                         <th>{formatCurrency(item.price)}</th>
@@ -50,13 +48,13 @@ class CartPage extends Component {
                                                 e.preventDefault();
                                                 this.props.removeFromCart(this.props.cartItems, item);
                                             }}
-                                        >x</Button> </th>
+                                        >x</Button></th>
                                     </tr>
 
                                 ))}
                                 <tr>
                                     <th colSpan="2">Total</th>
-                                    <th className="text-center"> </th>
+                                    <th className="text-center"></th>
                                     <th></th>
                                     <th className="text-right price">
                                         {formatCurrency(
@@ -66,9 +64,6 @@ class CartPage extends Component {
                                 </tbody>
                             </table>
                         )}
-                        {/*<button onClick={() => alert("TODO: create checkout view")}*/}
-                        {/*        className="btn">Checkout*/}
-                        {/*</button>*/}
                     </div>
                 </div>
             </div>

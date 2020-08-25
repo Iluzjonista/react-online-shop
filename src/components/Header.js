@@ -1,14 +1,8 @@
 import React from "react";
-import {
-    Container,
-    Navbar,
-} from "react-bootstrap";
-import {FaShoppingCart} from "react-icons/fa";
+import { Container, Navbar } from "react-bootstrap";
 import Filter from "./Filter";
 import {connect} from "react-redux";
 import Button from "react-bootstrap/Button";
-
-//Menu z wykorzystaniem react-router oraz react-bootstrap
 
 class Header extends React.Component {
     handleSearch(e) {
@@ -21,7 +15,6 @@ class Header extends React.Component {
             e.target.focus();
         }
     }
-
     render() {
         return (
             <Navbar bg="light" expand="lg" variant="light" fixed="top">

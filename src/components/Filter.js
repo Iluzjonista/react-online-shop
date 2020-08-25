@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import {filterProducts} from "../actions/products";
+import ReactDOM from "react-dom";
+import { Route , withRouter} from 'react-router-dom';
 
 class Filter extends Component {
     render() {
@@ -10,10 +12,12 @@ class Filter extends Component {
                 <select
                     className="form-control"
                     id="categorySelect"
-                    onChange={e =>
-                        this.props.filterProducts(this.props.products, e.target.value)
-                    }
                     value={categories}
+                    onChange={e =>
+                        this.props.filterProducts(this.props.products, e.target.value) &&
+                        this.props.history.push(`/${e.target.value}`)
+                    }
+
                 >
                     <option value="">All</option>
                     <option value="camera">Camera</option>
@@ -30,6 +34,6 @@ const mapStateToProps = state => ({
     filteredProducts: state.products.filteredItems,
 });
 
-export default connect(mapStateToProps, {filterProducts})(
-    Filter
+export default withRouter(connect(mapStateToProps, {filterProducts}) (
+    Filter)
 );

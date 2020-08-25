@@ -11,10 +11,10 @@ class Filter extends Component {
                 <Link to={'/'}>
                     <button
                         className="btn btn-outline-dark"
+                        value='camera'
                         onClick={e =>
                             this.props.filterProducts(this.props.products, e.target.value)
                         }
-                        value='camera'
                     >
                         Camera
                     </button>

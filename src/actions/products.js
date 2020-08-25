@@ -1,5 +1,6 @@
 import {
   FETCH_PRODUCTS,
+  FILTER_PRODUCTS_BY_NAME,
   FILTER_PRODUCTS_BY_CATEGORY,
   FILTER_PRODUCTS_BY_ID,
 } from "./types";
@@ -13,6 +14,21 @@ export const fetchProducts = () => dispatch => {
         payload: data
       });
     });
+};
+
+export const filterProduct = (products, name) => dispatch => {
+  return dispatch({
+    type: FILTER_PRODUCTS_BY_NAME,
+    payload: {
+      items:
+        name === ""
+          ? products
+          : products.filter(
+              a => a.categories.indexOf(name.toLowerCase()) >= 0
+            ),
+      name: name
+    }
+  });
 };
 
 export const filterProducts = (products, cat) => dispatch => {

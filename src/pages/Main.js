@@ -1,5 +1,4 @@
 import React, {Fragment} from 'react';
-
 import Products from "../components/Products";
 import Single from "../components/Single";
 import {Container} from "react-bootstrap";
@@ -10,18 +9,14 @@ class Main extends React.Component {
 
         return (
             <Fragment>
-
                 <Container className='mt-75'>
                     <div className="row">
-                        {/*{this.context.router.getCurrentParams().slug;}*/}
                         <div className="col-md-12">
                             {this.props.filteredProducts.length === 0 && "There is no products in our shop. Sorry."}
-                            {this.props.filteredProducts.length === 1 ? <Single products={this.props.filteredSingle}/> : <Products products={this.props.filteredProducts}/>}
-                            {/*{this.props.filteredProducts.length > 1 && <Products products={this.props.filteredProducts}/>}*/}
-
-
+                            {/*{this.props.filteredProducts.length === 1 ?*/}
+                            {/*    <Single products={this.props.filteredSingle}/> :*/}
+                            <Products products={this.props.filteredProducts}/>
                         </div>
-
                     </div>
                 </Container>
             </Fragment>
@@ -29,7 +24,6 @@ class Main extends React.Component {
     }
 }
 
-// export default Main;
 const mapStateToProps = state => {
     return {
         allItems: state.products.items,
@@ -40,5 +34,4 @@ const mapStateToProps = state => {
         size: state.products.size
     };
 };
-
 export default connect(mapStateToProps)(Main);

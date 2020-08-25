@@ -21,7 +21,7 @@ class Single extends Component {
                     <div className="breadcrumb">
                         <Breadcrumb>
                             <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                            <Breadcrumb.Item active>Products</Breadcrumb.Item>
+                            <Breadcrumb.Item href="/">Products</Breadcrumb.Item>
                             <Breadcrumb.Item active>{p.productName}</Breadcrumb.Item>
                         </Breadcrumb>
                     </div>
