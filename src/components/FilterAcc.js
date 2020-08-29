@@ -8,7 +8,7 @@ class Filter extends Component {
         const {categories} = this.props;
         return (
             <div className="form-group m-0">
-                <Link to={'/'}>
+                <Link to={'/accessories'}>
                     <button
                         className="btn btn-outline-dark"
                         onClick={e =>

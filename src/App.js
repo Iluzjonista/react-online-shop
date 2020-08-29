@@ -5,8 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CartPage from "./pages/CartPage"
 import Main from "./pages/Main";
-import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
-import Products from "./components/Products";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 class App extends Component {
     render() {
@@ -17,11 +16,8 @@ class App extends Component {
                     <Route path="/cart">
                         <CartPage/>
                     </Route>
-                    <Route path="/(|camera|lens|accessories|camera/:id|lens/:id|accessories/:id)">
+                    <Route path="/">
                         <Main/>
-                    </Route>
-                    <Route path="/(camera/:id|lens/:id|accessories/:id)">
-                        <Products/>
                     </Route>
                 </Switch>
                 <Route component={Footer}/>
