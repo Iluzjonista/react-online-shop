@@ -24,7 +24,7 @@ export const filterProduct = (products, name) => dispatch => {
         name === ""
           ? products
           : products.filter(
-              a => a.categories.indexOf(name.toLowerCase()) >= 0
+              a => a.name.indexOf(name.toLowerCase()) >= 0
             ),
       name: name
     }
